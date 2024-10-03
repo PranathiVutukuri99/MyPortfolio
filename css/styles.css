@@ -3408,8 +3408,9 @@ img.u-pull-left {
 }
 
 .about-info__pic {
-    object-fit     : cover;
+    object-fit     : flex;
     margin         : 0;
+    margin-right: 10px;
     vertical-align : bottom;
 }
 
