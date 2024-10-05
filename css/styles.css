@@ -3586,12 +3586,12 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 
 .s-PROJECTS {
-    padding-top    : var(--vspace-5);
-    padding-bottom : var(--vspace-3_5);
+    padding-top    : 0;
+    padding-bottom : 0;
 }
 
 .s-PROJECTS .h1 {
-    margin-top : 0;
+    margin-top : auto;
 }
 
 /* --------------------------------------------------------------------
