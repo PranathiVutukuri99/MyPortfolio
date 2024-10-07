@@ -134,21 +134,21 @@
 
    /* Highlight active menu link on pagescroll
     * ------------------------------------------------------ */
-    const ssScrollSpy = function() {
+  //  const ssScrollSpy = function() {
 
-        const sections = document.querySelectorAll(".target-section");
+     //   const sections = document.querySelectorAll(".target-section");
 
         // Add an event listener listening for scroll
         window.addEventListener("scroll", navHighlight);
 
-        function navHighlight() {
+     //   function navHighlight() {
         
             // Get current scroll position
             let scrollY = window.pageYOffset;
         
             // Loop through sections to get height(including padding and border), 
             // top and ID values for each
-            sections.forEach(function(current) {
+    //        sections.forEach(function(current) {
                 const sectionHeight = current.offsetHeight;
                 const sectionTop = current.offsetTop - 50;
                 const sectionId = current.getAttribute("id");
