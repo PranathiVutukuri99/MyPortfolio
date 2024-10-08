@@ -3410,7 +3410,8 @@ img.u-pull-left {
 .about-info__pic {
     object-fit     : flex;
     margin         : 0;
-    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     vertical-align : bottom;
 }
 
@@ -3543,6 +3544,16 @@ img.u-pull-left {
         max-width : 800px;
     }
 
+@media screen and (max-width: 768px) {
+    .about-info__pic-block {
+    text-align: center;
+    }
+    .about-info__pic {
+    max-width: 100%;
+    height: auto;
+  }
+}
+    
     .about-info__text {
         padding     : var(--vspace-1) 0 0 0;
         margin-left : 0;
