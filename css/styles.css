@@ -164,8 +164,9 @@ p { margin: 0; }
 .hero__pic {
   width: 108px; height: 108px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: center 20%;
+  background-image: url('../images/Pranathi.jpg');
+  background-size: 130%;
+  background-position: center 25%;
   border: 1px solid var(--border);
   flex-shrink: 0;
 }
