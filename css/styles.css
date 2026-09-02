@@ -165,8 +165,8 @@ p { margin: 0; }
   width: 108px; height: 108px;
   border-radius: 50%;
   background-image: url('../images/Pranathi.jpg');
-  background-size: 80%;
-  background-position: center 25%;
+  background-size: 105%;
+  background-position: center 15%;
   border: 1px solid var(--border);
   flex-shrink: 0;
 }
