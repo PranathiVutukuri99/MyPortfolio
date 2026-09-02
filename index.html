@@ -1,591 +1,354 @@
 <!DOCTYPE html>
-<html class="no-js ss-preload" lang="en">
+<html lang="en">
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Welcome To My Portfolio</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
+<meta charset="utf-8">
+<title>Pranathi Vutukuri | Software Engineer</title>
+<meta name="description" content="Pranathi Vutukuri — Software Engineer. Backend services, data pipelines, distributed systems.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
+<body class="min-h">
 
-<body id="top">
+<header class="site-header">
+  <nav class="nav">
+    <a href="#top" class="nav__brand"><span class="accent">pranathi@portfolio</span><span class="muted">:~$</span></a>
+    <ul class="nav__links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#education">education</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <div class="nav__right">
+      <a href="VNP_Resume.pdf" download class="nav__resume">resume &darr;</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <ul class="nav__mobile" id="navMobile">
+    <li><a href="#about">about</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#experience">experience</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#education">education</a></li>
+    <li><a href="#contact">contact</a></li>
+    <li><a href="VNP_Resume.pdf" download class="accent">resume &darr;</a></li>
+  </ul>
+</header>
 
+<main>
 
-    <!-- # preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
+  <section id="top" class="wrap hero">
+    <div class="term">
+      <div class="term__bar">
+        <span class="dot dot--red"></span><span class="dot dot--amber"></span><span class="dot dot--green"></span>
+        <span class="term__title">whoami</span>
+      </div>
+      <div class="term__body hero__body">
+        <img src="images/Pranathi.jpg" alt="Pranathi Vutukuri" class="hero__pic">
+        <div>
+          <p class="cmd"><span class="accent">$</span> whoami</p>
+          <h1 class="hero__name">Pranathi Vutukuri</h1>
+          <p class="hero__title">Software Development Engineer</p>
+          <p class="hero__tagline">
+            Building reliable backend services and efficient data pipelines with Java, Python,
+            and SQL — five years designing systems that hold up under real business load.
+          </p>
+          <p class="hero__location">Cumming, GA</p>
+
+          <div class="hero__actions">
+            <a href="VNP_Resume.pdf" download="Pranathi_Vutukuri_Resume.pdf" class="btn btn--primary">Download Resume</a>
+            <a href="#projects" class="btn btn--secondary">View Projects</a>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="wrap">
+    <div class="heading">
+      <span class="heading__index">01</span>
+      <h2 class="heading__title"><span class="accent">&gt;</span> About</h2>
+      <span class="heading__cmd">about.md</span>
+    </div>
+    <div class="term">
+      <div class="term__bar">
+        <span class="dot dot--red"></span><span class="dot dot--amber"></span><span class="dot dot--green"></span>
+        <span class="term__title">cat about.md</span>
+      </div>
+      <div class="term__body">
+        <p>
+          Having worked with Python, Java, SQL, and various databases for over five years, my skill
+          set is diverse. My expertise includes cloud platforms like AWS and Azure, data manipulation
+          libraries and BI tools like Tableau and Pandas. I've also successfully implemented ETL
+          processes and developed AI solutions using RASA. I create comprehensive data solutions
+          using Django and React.
+        </p>
+        <p>
+          My passion lies in transforming complex data into actionable insights, driving informed
+          decision-making and business growth through innovative data strategies — from designing
+          ETL pipelines and optimizing SQL queries, to working with distributed systems on AWS and
+          building internal tools for scalable data processing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="wrap">
+    <div class="heading">
+      <span class="heading__index">02</span>
+      <h2 class="heading__title"><span class="accent">&gt;</span> Skills</h2>
+      <span class="heading__cmd">skills.json</span>
+    </div>
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="card__label">Languages</h3>
+        <div class="badges">
+          <span class="badge">Java</span><span class="badge">Python</span><span class="badge">JavaScript</span>
+          <span class="badge">SQL</span><span class="badge">C</span><span class="badge">C++</span>
+          <span class="badge">PHP</span><span class="badge">PySpark</span><span class="badge">HTML</span>
+          <span class="badge">CSS</span><span class="badge">XML</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3 class="card__label">Data &amp; Cloud</h3>
+        <div class="badges">
+          <span class="badge">AWS</span><span class="badge">Azure</span><span class="badge">Databricks</span>
+          <span class="badge">SQL Server</span><span class="badge">PostgreSQL</span><span class="badge">MongoDB</span>
+          <span class="badge">Power BI</span><span class="badge">Tableau</span><span class="badge">Pandas</span>
+          <span class="badge">NumPy</span><span class="badge">Matplotlib</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3 class="card__label">Frameworks &amp; Tools</h3>
+        <div class="badges">
+          <span class="badge">Spring Boot</span><span class="badge">Django</span><span class="badge">React</span>
+          <span class="badge">Redux</span><span class="badge">Angular</span><span class="badge">Express.js</span>
+          <span class="badge">RASA</span><span class="badge">Kubernetes</span><span class="badge">Apache Tomcat</span>
+          <span class="badge">Git</span><span class="badge">Eclipse</span><span class="badge">PyCharm</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="wrap">
+    <div class="heading">
+      <span class="heading__index">03</span>
+      <h2 class="heading__title"><span class="accent">&gt;</span> Experience</h2>
+      <span class="heading__cmd">experience.log</span>
     </div>
 
+    <div class="timeline">
 
-    <!-- # page wrap
-    ================================================== -->
-    <div class="s-pagewrap">
-
-        <div class="circles">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+      <div class="timeline__entry">
+        <span class="timeline__dot"></span>
+        <div class="timeline__head">
+          <h3>Software Engineer</h3>
+          <span class="timeline__date">Jun 2026 &ndash; Present</span>
         </div>
-
-
-        <!-- ## site header 
-        ================================================== -->
-        <header class="s-header">
-
-            <div class="header-mobile">
-                <span class="mobile-home-link"><a href="index.html">Pranathi Vutukuri</a></span>
-                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
-            </div>
-
-            <div class="row wide main-nav-wrap">
-                <nav class="column lg-12 main-nav">
-                    <ul>
-                        <li><a href="#intro" class="smoothscroll">Introduction</a></li>
-                        <li><a href="#about" class="smoothscroll">About</a></li>
-                        <li><a href="#project" class="smoothscroll">Projects</a></li>
-                        <li><a href="#contact" class="smoothscroll">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </header> <!-- end s-header -->
-
-
-        <!-- ## main content
-        ==================================================- -->
-        <main class="s-content">
-
-
-            <!-- ### intro
-            ================================================== -->
-            <section id="intro" class="s-intro target-section">
-
-                <div class="row intro-content wide">
-
-                    <div class="column">
-                        <div class="text-pretitle with-line">
-                            Hello Everyone
-                        </div>
-
-                                                    <h3 align="justify">
-                               I’m Pranathi Vutukuri, a Software Development Engineer based in Cumming, GA, with experience designing, building, and optimizing scalable software systems using Java, Python, and SQL. I focus on developing reliable backend services, efficient data pipelines, and well-structured APIs that solve complex problems and support business-critical applications. I’m passionate about writing clean, maintainable code, improving system performance, and collaborating across teams to deliver high-quality software that drives real-world impact.   
-                            </h3>
-                                    
-                    </div>
-
-                    
-
-                </div> <!-- end intro content -->
-
-                <a href="#about" class="intro-scrolldown smoothscroll">
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
-                </a>
-
-            </section> <!-- end s-intro -->
-
-
-            <!-- ### about
-            ================================================== -->
-            <section id="about" class="s-about target-section">
-
-
-                <div class="row about-info wide" data-animate-block>
-
-                    <div class="column lg-6 md-12 about-info__pic-block" />
-                        <img src="images/Pranathi.jpg" 
-                             srcset="images/Pranathi.jpg 1x, images/Pranathi.jpg 2x"  alt="" height="400" width="400" class="about-info__pic" data-animate-el/>
-                    </div>
-
-                    <div class="column lg-6 md-12">
-                        <div class="about-info__text" >
-
-                            <h2 class="text-pretitle with-line" data-animate-el>
-                                About
-                            </h2>
-                            <p class="attention-getter" data-animate-el align=justify>
-                                Having worked with Python, Java, SQL, and various databases for over five years, my skill set is diverse. My expertise includes cloud platforms like AWS and Azure, data manipulation libraries and BI tools like Tableau and Pandas. I've also successfully implemented ETL processes and developed AI solutions using RASA. I create comprehensive data solutions using Django and React. My passion lies in transforming complex data into actionable insights, driving informed decision-making and business growth through innovative data strategies.
-                            </p>
-                            <a href="\MyPortfolio\VNP_Resume.pdf" class="btn btn--medium u-fullwidth" data-animate-el>Download Resume</a>
-
-                        </div>
-                    </div>
-                </div> <!-- about-info -->
-
-
-                <div class="row about-expertise-portfolio wide" data-animate-block>
-                    <div class="column lg-12">
-
-                        <h1 class="text-pretitle" data-animate-el>Expertise</h1>
-
-                        <p align=justify>
-                            Experience building web applications and backend services, designing ETL pipelines, optimizing SQL queries, working with distributed systems on AWS, and developing internal tools for scalable data processing.
-                        </p>
-
-                    </div>
-                </div> <!-- end about-expertise -->
-
-                <div class="row about-technical-skills-portfolio wide" data-animate-block>
-                    <div class="column lg-12">
-
-                        <h2 class="text-pretitle" data-animate-el>Technical Skills</h2>
-
-                       <ul align=justify>
-                           <li>Languages: Java, JavaScript, Python, HTML, CSS, SQL, C, C++, PHP, PySpark, XML.</li>
-                           <li>Databases: SQL Server, MongoDB, NoSQL Server, PostgreSQL Server.</li>
-                           <li>Tools & Technologies: AWS, Azure, Pandas, NumPy, Matplotlib, SDLC, ETL, Power BI, Tableau, Excel, RASA, Django, React, Redux, Angular, Express.js, Kubernetes, Git, Eclipse, SpringBoot, Apache Tomcat, Distributed Computing, Databricks, PyCharm.</li>
-                       </ul>
-
-                    </div>
-                </div> <!-- end about-technical-skills -->
-
-
-
-<div class="row about-timelines-portfolio wide" data-animate-block>
-                    <div class="column lg-12 tab-12">
-                        <h2 class="text-pretitle" data-animate-el>Work Experience</h2>
-                        <div class="timeline" data-animate-el>
-                            <div class="timeline__block">
-                                <div class="bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">SVT IT Infotech Inc.</h4>
-                                    <h5 class="timeline__meta">Software Engineer</h5>
-                                    <p class="timeline__timeframe">June 2026 - Present</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <ul align=justify>
-                                        <li>Design and develop 15+ REST API endpoints for enterprise client applications using Java and Spring Boot, supporting 500+ daily active users.</li>
-                                        <li>Automate build and deployment pipelines with Azure DevOps CI/CD, cutting release time from 2 days to under 4 hours.</li>
-                                        <li>Diagnose and resolve production defects across the stack, lowering open bug backlog by 40% within the first two months.</li>
-                                        <li>Optimize database schemas and queries in SQL Server, improving average API response time by 25%.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Amazon</h4>
-                                    <h5 class="timeline__meta">Software Development Engineer I</h5>
-                                    <p class="timeline__timeframe">December 2024 - June 2026</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <ul align=justify>
-                                        <li>Developed backend services for AWS Health Imaging using Java, Spring Boot, and DynamoDB to support workflow processing and metadata retrieval across distributed systems.</li>
-                                        <li>Designed and implemented an asynchronous caching service backed by DynamoDB, reducing repeated upstream API calls and improving workflow retrieval efficiency.</li>
-                                        <li>Built and validated backend features using development environments, integration tests, and Hydra test automation before production deployments.</li>
-                                        <li>Monitored service health by implementing CloudWatch alarms and resolving workflow reliability issues, including pagination and workflow ordering improvements.</li>
-                                        <li>Set up and maintained personal development stacks for isolated feature testing and validation.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Satek IT Solutions LLC</h4>
-                                    <h5 class="timeline__meta">Java Developer</h5>
-                                    <p class="timeline__timeframe">July 2024 - December 2024</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <ul align=justify>
-                                        <li>Contributed significantly to the improvement of a Spring Boot website by restructuring controllers, POJOs, and DAOs, leading to a 15% increase in performance.</li>
-                                        <li>Developed and integrated RESTful APIs using Java and Spring Boot, improving system connectivity with shipping partners and external services.</li>
-                                        <li>Enhanced database efficiency by fine-tuning indices and restructuring complex SQL Server queries, reducing query execution time by 40%.</li>
-                                        <li>Achieved a 50% increase in user interaction by implementing UI improvements in an e-commerce web application, utilizing React, Node.js, and Express.js.</li>
-                                        <li>Substantially reduced website load times through the implementation of caching strategies and optimization of React components for enhanced rendering speed.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Onyx CenterSource</h4>
-                                    <h5 class="timeline__meta">Software Developer Intern</h5>
-                                    <p class="timeline__timeframe">August 2023 - December 2023</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <ul align=justify>
-                                        <li>Developed an AI chatbot using RASA NLU, Python, and PostgreSQL, which automated 80% of customer interactions and reduced manual response effort by 50%.</li>
-                                        <li>Implemented a system to record and store all chatbot interactions in a database, facilitating the analysis of customer inquiries and responses, and improving the chatbot's accuracy over time.</li>
-                                        <li>Using sprint planning, created biweekly versions of responsive application to reflect users' augmentation requests.</li>
-                                        <li>Integrated AI chatbot with GroupPay website, which increased customer self-service adoption, improved user engagement, and streamlined data collection process.</li>
-                                        <li>Conducted performance testing on the chatbot system, simulating 1000+ daily user queries, ensuring 99.9% uptime and response times under 2 seconds.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Satkaarya Technologies Pvt Ltd</h4>
-                                    <h5 class="timeline__meta">Software Developer</h5>
-                                    <p class="timeline__timeframe">November 2019 - July 2022</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <ul align=justify>
-                                        <li>Used Python (Pandas, NumPy, Matplotlib) for data cleaning and analysis, revealing customer behavior trends from large datasets.</li>
-                                        <li>Implemented Spark and PySpark solutions for big data processing, reducing large-scale dataset processing time by 40%.</li>
-                                        <li>Performed exploratory data analysis with Jupyter, driving data-informed strategies across the SDLC through cross-functional collaboration.</li>
-                                        <li>Optimized SQL queries for ETL processes, boosting data pipeline efficiency by 30% and ensuring downstream data accuracy.</li>
-                                        <li>Created interactive Power BI and Tableau dashboards, improving decision-making efficiency by 25% through actionable data insights.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div> <!-- end timeline -->
-                    </div> <!-- end column -->
-
-                    <div class="column lg-14 tab-14">
-
-                        <h2 class="text-pretitle" data-animate-el>Education</h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">The University of Texas at Dallas</h4>
-                                    <h5 class="timeline__meta">Master in Information Technology and Management</h5>
-                                    <p class="timeline__timeframe">May 2024</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <ul align=justify>
-                                        <li>Relevant Coursework: Object-oriented programming with Python, Data Management, System Analysis & Project Management, Agile Project Management, Data Visualization, Customer Relationship Management with Salesforce, Data Warehousing, Organizational Behavior, Innovation & Entrepreneurship.</li>
-                                    </ul>
-                                </div>
-                            </div>
-    
-                            <div class="timeline__block">
-                                <div class="bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">JNTUH College of Engineering</h4>
-                                    <h5 class="timeline__meta">Bachelor in Information Technology</h5>
-                                    <p class="timeline__timeframe">July 2021</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <ul align=justify>
-                                        <li>Relevant Coursework: Database Management Systems, Data Warehousing and ETL Processes, Data Mining, Cloud Data Solutions, Business Intelligence Tools, Data Structures and Algorithms, Python, Applied Machine Learning, Software Development Lifecycle (SDLC).</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> <!-- end timeline -->
-                    </div> <!-- end column -->
-                </div> <!-- end about-timelines -->
-            </section> <!-- end s-about -->
-            <!-- ### works
-            ================================================== -->
-                            <section id="project" class="s-project target-section">
-                <div class="row projects-portfolio wide">
-
-                    <div class="column lg-12" data-animate-block>
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            PROJECTS
-                        </h2>
-                        <h2  data-animate-el align=justify>
-                            Here are some of my projects I have done lately. Feel free to check them out.
-                        </h2>
-    
-                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-01">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/Onyx.jpg"
-                                             srcset="images/portfolio/Onyx.jpg 1x, images/portfolio/Onyx.jpg 2x"  alt="">
-                                    </div>
-                                    
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Onyx CenterSource
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            AI Chatbot - Python, Django, RASA, My SQL, Tableau
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-02">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/Spoonful.jpg" 
-                                             srcset="images/portfolio/Spoonful.jpg 1x, images/portfolio/Spoonful.jpg 2x" alt="">
-                                    </div>
-                                    
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Spoonful Of Hyderabad
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Website - HTML, CSS, Bootstrap, JavaScript and XML
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-03">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/Ecostructive.jpg" 
-                                             srcset="images/portfolio/Ecostructive.jpg 1x, images/portfolio/Ecostructive.jpg 2x" alt="">
-                                    </div>
-                                    
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Ecostructive
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Web App - Python, Django, MySQL, HTML, CSS, Power BI
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-04">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/eCompare.jpg"
-                                             srcset="images/portfolio/eCompare.jpg 1x, images/portfolio/eCompare.jpg 2x" alt="">
-                                    </div>
-                                    
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            eCompare
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Web App - Web Scraping, Machine Learning for Voice Recognition and Text Based Search, MySQL, HTML, CSS
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-
-                            
-                        </ul> <!-- end folio-list -->
-
-                    </div> <!-- end column -->
-
-
-                    <!-- Modal Templates Popup
-                    -------------------------------------------- -->
-                    <div id="modal-01" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/Onyx.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Onyx CenterSource</h5>
-                                <ul>
-                                    <li>Developed and integrated a RASA-based AI chatbot for GroupPay, increasing profits by 40% through improved data collection efficiency.</li>
-                                    <li>Implemented database storage for all chatbot interactions, enabling ongoing analysis and continuous accuracy improvements.</li>
-                                    <li>Visualized interaction data using Tableau and enhanced chatbot performance through in-depth conversation analysis and model fine-tuning.</li>
-                                </ul>
-                                <ul class="modal-popup__cat">
-                                    <p>AI Chatbot</p><br>
-                                    <p>Python, Django, RASA, My SQL, Tableau</p>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-02" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/Spoonful.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Spoonful of Hyderabad</h5>
-                                <ul>
-                                    <li>Developed a digital marketing website for food bloggers where I designed and built the website.</li>
-                                    <li>Our website helped them garner more followers on social media and provided them new business opportunities.</li>
-                                </ul>
-                                <ul class="modal-popup__cat">
-                                    <p>Digital/Web Marketing</p><br>
-                                    <p>HTML, CSS, Bootstrap, JavaScript and XML</p>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-03" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/Ecostructive.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Ecostructive</h5>
-                                <ul>
-                                    <li>Created a web app for waste management, allowing user-specific garbage collection requests and predictive modeling for trend forecasting.</li>
-                                    <li>Utilized Power BI dashboards to gain operational insights, optimize routes, and reduce costs in waste management processes.</li>
-                                    <li>Implemented subscription models and targeted advertising to ensure financial viability while streamlining recycling through authorized collection teams.</li>
-                                </ul>
-                                <ul class="modal-popup__cat">
-                                    <p>Web App</p><br>
-                                    <p>Python, Django, MySQL, HTML, CSS, Power BI</p>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-04" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/eCompare.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>eCompare</h5>
-                                <ul>
-                                    <li>Built a comparison platform using web scraping to aggregate and compare data across multiple sources.</li>
-                                    <li>Implemented machine learning models for voice recognition and text-based search to improve platform usability.</li>
-                                    <li>Utilized Power BI dashboards to optimize routes and reduce costs.</li>
-                                </ul>
-                                <ul class="modal-popup__cat">
-                                    <p>Web App</p><br>
-                                    <p>Web Scraping, Machine Learning for Voice Recognition and Text based search, MySQL, HTML, CSS</p>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-05" hidden>
-                        <div class="modal-popup">
-
-                            <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Sand Dunes</h5>
-                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Illustration</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-06" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Minimalismo</h5>
-                                <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Branding</li>
-                                    <li>Product Design</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> <!-- end modal -->
-
-                </div> <!-- end works-portfolio -->
-
-                            </section>
-
-
-            <!-- ### contact
-            ================================================== -->
-            <section id="contact" class="s-contact target-section">
-
-                <div class="row contact--portfolio wide">
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle">
-                            Contact
-                        </h2>
-
-                        <p class="h3">
-                            I look forward to hearing from you. Whether you have a question or would like to discuss data analytics, technology, or industry insights, please feel free to reach out.
-                        </p>
-                    </div>
-                </div> <!-- end contact-top -->
-
-                <div class="row contact-bottom">
-                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Reach me at</h3>
-                        <p class="contact-links">
-                            <a href="mailto:vnpranathi@gmail.com" class="mailtoui">vnpranathi@gmail.com</a> <br>
-                            <a href="tel:+1(469) 929-0751">+1(469) 929-0751</a>
-                        </p>
-                    </div>
-                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Social</h3>
-                        <ul class="contact-social">
-                            <li><a href="https://www.linkedin.com/in/npvutukuri">LinkedIn</a></li>
-                            <li><a href="https://github.com/PranathiVutukuri99">GitHub</a></li>
-                        </ul>
-                    </div>
-                    <div class="column lg-4 md-12 contact-block">
-                        <a href="mailto:vnpranathi@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Mail Me</a>
-                    </div>
-                </div> <!-- end contact-bottom -->
-
-            </section> <!-- end contact -->
-
-        </main> <!-- end s-content -->
-
-
-        <!-- ## footer
-        ================================================== -->
-        <footer class="s-footer">
-
-            <div class="row">
-                <div class="column ss-copyright">
-                    <span>© Naaga Pranathi Vutukuri </span> 
-                    
-                </div>
-
-                <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
-                    </a>
-                </div>
-            </div>
-
-        </footer> <!-- end s-footer -->
-
-    </div> <!-- end -s-pagewrap -->
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+        <p class="timeline__org">SVT IT Infotech Inc.</p>
+        <ul class="timeline__list">
+          <li><span class="accent">&rsaquo;</span> Design and develop 15+ REST API endpoints for enterprise client applications using Java and Spring Boot, supporting 500+ daily active users.</li>
+          <li><span class="accent">&rsaquo;</span> Automate build and deployment pipelines with Azure DevOps CI/CD, cutting release time from 2 days to under 4 hours.</li>
+          <li><span class="accent">&rsaquo;</span> Diagnose and resolve production defects across the stack, lowering open bug backlog by 40% within the first two months.</li>
+          <li><span class="accent">&rsaquo;</span> Optimize database schemas and queries in SQL Server, improving average API response time by 25%.</li>
+        </ul>
+      </div>
+
+      <div class="timeline__entry">
+        <span class="timeline__dot"></span>
+        <div class="timeline__head">
+          <h3>Software Development Engineer I</h3>
+          <span class="timeline__date">Dec 2024 &ndash; Jun 2026</span>
+        </div>
+        <p class="timeline__org">Amazon</p>
+        <ul class="timeline__list">
+          <li><span class="accent">&rsaquo;</span> Developed backend services for AWS Health Imaging using Java, Spring Boot, and DynamoDB to support workflow processing and metadata retrieval across distributed systems.</li>
+          <li><span class="accent">&rsaquo;</span> Designed and implemented an asynchronous caching service backed by DynamoDB, reducing repeated upstream API calls and improving workflow retrieval efficiency.</li>
+          <li><span class="accent">&rsaquo;</span> Built and validated backend features using development environments, integration tests, and Hydra test automation before production deployments.</li>
+          <li><span class="accent">&rsaquo;</span> Monitored service health by implementing CloudWatch alarms and resolving workflow reliability issues, including pagination and workflow ordering improvements.</li>
+          <li><span class="accent">&rsaquo;</span> Set up and maintained personal development stacks for isolated feature testing and validation.</li>
+        </ul>
+      </div>
+
+      <div class="timeline__entry">
+        <span class="timeline__dot"></span>
+        <div class="timeline__head">
+          <h3>Java Developer</h3>
+          <span class="timeline__date">Jul 2024 &ndash; Dec 2024</span>
+        </div>
+        <p class="timeline__org">Satek IT Solutions LLC</p>
+        <ul class="timeline__list">
+          <li><span class="accent">&rsaquo;</span> Contributed significantly to the improvement of a Spring Boot website by restructuring controllers, POJOs, and DAOs, leading to a 15% increase in performance.</li>
+          <li><span class="accent">&rsaquo;</span> Developed and integrated RESTful APIs using Java and Spring Boot, improving system connectivity with shipping partners and external services.</li>
+          <li><span class="accent">&rsaquo;</span> Enhanced database efficiency by fine-tuning indices and restructuring complex SQL Server queries, reducing query execution time by 40%.</li>
+          <li><span class="accent">&rsaquo;</span> Achieved a 50% increase in user interaction by implementing UI improvements in an e-commerce web application, utilizing React, Node.js, and Express.js.</li>
+          <li><span class="accent">&rsaquo;</span> Substantially reduced website load times through the implementation of caching strategies and optimization of React components for enhanced rendering speed.</li>
+        </ul>
+      </div>
+
+      <div class="timeline__entry">
+        <span class="timeline__dot"></span>
+        <div class="timeline__head">
+          <h3>Software Developer Intern</h3>
+          <span class="timeline__date">Aug 2023 &ndash; Dec 2023</span>
+        </div>
+        <p class="timeline__org">Onyx CenterSource</p>
+        <ul class="timeline__list">
+          <li><span class="accent">&rsaquo;</span> Developed an AI chatbot using RASA NLU, Python, and PostgreSQL, which automated 80% of customer interactions and reduced manual response effort by 50%.</li>
+          <li><span class="accent">&rsaquo;</span> Implemented a system to record and store all chatbot interactions in a database, facilitating the analysis of customer inquiries and responses, and improving the chatbot's accuracy over time.</li>
+          <li><span class="accent">&rsaquo;</span> Used sprint planning to create biweekly versions of the responsive application reflecting users' augmentation requests.</li>
+          <li><span class="accent">&rsaquo;</span> Integrated the AI chatbot with the GroupPay website, increasing customer self-service adoption, improving user engagement, and streamlining data collection.</li>
+          <li><span class="accent">&rsaquo;</span> Conducted performance testing on the chatbot system, simulating 1000+ daily user queries, ensuring 99.9% uptime and response times under 2 seconds.</li>
+        </ul>
+      </div>
+
+      <div class="timeline__entry">
+        <span class="timeline__dot"></span>
+        <div class="timeline__head">
+          <h3>Software Developer</h3>
+          <span class="timeline__date">Nov 2019 &ndash; Jul 2022</span>
+        </div>
+        <p class="timeline__org">Satkaarya Technologies Pvt Ltd</p>
+        <ul class="timeline__list">
+          <li><span class="accent">&rsaquo;</span> Used Python (Pandas, NumPy, Matplotlib) for data cleaning and analysis, revealing customer behavior trends from large datasets.</li>
+          <li><span class="accent">&rsaquo;</span> Implemented Spark and PySpark solutions for big data processing, reducing large-scale dataset processing time by 40%.</li>
+          <li><span class="accent">&rsaquo;</span> Performed exploratory data analysis with Jupyter, driving data-informed strategies across the SDLC through cross-functional collaboration.</li>
+          <li><span class="accent">&rsaquo;</span> Optimized SQL queries for ETL processes, boosting data pipeline efficiency by 30% and ensuring downstream data accuracy.</li>
+          <li><span class="accent">&rsaquo;</span> Created interactive Power BI and Tableau dashboards, improving decision-making efficiency by 25% through actionable data insights.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects" class="wrap">
+    <div class="heading">
+      <span class="heading__index">04</span>
+      <h2 class="heading__title"><span class="accent">&gt;</span> Projects</h2>
+      <span class="heading__cmd">projects/</span>
+    </div>
+    <div class="grid grid--2">
+
+      <div class="proj-card">
+        <img src="images/portfolio/Onyx.jpg" alt="" class="proj-card__img">
+        <h3>Onyx CenterSource</h3>
+        <p class="proj-card__desc">
+          AI support chatbot built with RASA NLU, Python, and PostgreSQL for GroupPay's customer
+          service flow.
+        </p>
+        <p class="proj-card__highlight"><span class="accent">&rarr;</span> Automated 80% of customer interactions, increasing profits by 40%.</p>
+        <div class="badges">
+          <span class="badge">Python</span><span class="badge">Django</span><span class="badge">RASA</span>
+          <span class="badge">MySQL</span><span class="badge">Tableau</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <img src="images/portfolio/Spoonful.jpg" alt="" class="proj-card__img">
+        <h3>Spoonful of Hyderabad</h3>
+        <p class="proj-card__desc">
+          Digital marketing website for food bloggers, designed and built end to end.
+        </p>
+        <p class="proj-card__highlight"><span class="accent">&rarr;</span> Grew the client's social following and opened new business opportunities.</p>
+        <div class="badges">
+          <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">Bootstrap</span>
+          <span class="badge">JavaScript</span><span class="badge">XML</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <img src="images/portfolio/Ecostructive.jpg" alt="" class="proj-card__img">
+        <h3>Ecostructive</h3>
+        <p class="proj-card__desc">
+          Waste-management web app with user-specific garbage collection requests and predictive
+          trend forecasting.
+        </p>
+        <p class="proj-card__highlight"><span class="accent">&rarr;</span> Power BI dashboards drove route optimization and cost reduction.</p>
+        <div class="badges">
+          <span class="badge">Python</span><span class="badge">Django</span><span class="badge">MySQL</span>
+          <span class="badge">Power BI</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <img src="images/portfolio/eCompare.jpg" alt="" class="proj-card__img">
+        <h3>eCompare</h3>
+        <p class="proj-card__desc">
+          Price comparison platform aggregating data via web scraping, with ML-based voice and
+          text search.
+        </p>
+        <p class="proj-card__highlight"><span class="accent">&rarr;</span> Power BI dashboards used to optimize routes and reduce costs.</p>
+        <div class="badges">
+          <span class="badge">Web Scraping</span><span class="badge">ML</span><span class="badge">MySQL</span>
+          <span class="badge">HTML/CSS</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education" class="wrap">
+    <div class="heading">
+      <span class="heading__index">05</span>
+      <h2 class="heading__title"><span class="accent">&gt;</span> Education</h2>
+      <span class="heading__cmd">education.yaml</span>
+    </div>
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="card__title">Master's in Information Technology and Management</h3>
+        <p class="card__org">The University of Texas at Dallas</p>
+        <p class="card__meta">May 2024 &middot; Object-oriented programming with Python, Data Management, System Analysis &amp; Project Management, Agile Project Management, Data Visualization, CRM with Salesforce, Data Warehousing</p>
+      </div>
+      <div class="card">
+        <h3 class="card__title">Bachelor's in Information Technology</h3>
+        <p class="card__org">JNTUH College of Engineering</p>
+        <p class="card__meta">Jul 2021 &middot; Database Management Systems, Data Warehousing and ETL Processes, Data Mining, Cloud Data Solutions, Business Intelligence Tools, Applied Machine Learning, SDLC</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap">
+    <div class="heading">
+      <span class="heading__index">06</span>
+      <h2 class="heading__title"><span class="accent">&gt;</span> Contact</h2>
+      <span class="heading__cmd">contact.sh</span>
+    </div>
+    <div class="term">
+      <div class="term__bar">
+        <span class="dot dot--red"></span><span class="dot dot--amber"></span><span class="dot dot--green"></span>
+        <span class="term__title">contact.sh</span>
+      </div>
+      <div class="term__body">
+        <p class="cmd"><span class="accent">$</span> Let's talk about data engineering, backend systems, or where those two meet.</p>
+        <div class="hero__actions" style="margin-top:24px;">
+          <a href="mailto:vnpranathi@gmail.com" class="btn btn--primary">Email Me</a>
+          <a href="https://www.linkedin.com/in/npvutukuri" target="_blank" rel="noopener" class="btn btn--secondary">LinkedIn</a>
+          <a href="https://github.com/PranathiVutukuri99" target="_blank" rel="noopener" class="btn btn--secondary">GitHub</a>
+          <a href="VNP_Resume.pdf" download class="btn btn--secondary">Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p>&copy; <span id="year"></span> Pranathi Vutukuri</p>
+    <p>Built with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
